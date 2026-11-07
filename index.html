@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taskManager</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+</head>
+
+<body class="min-h-screen">
+    <header  class="max-w-xl mx-auto">
+        <h1>Gestionnaire de tâches</h1>
+    </header>
+    <main class="max-w-xl mx-auto p-3">
+        <!-- Formulaire d'ajout et de modification -->
+        <form id="taskForm" class="flex flex-col gap-4">
+
+            <input type="text" id="title" placeholder="Titre de la tâche" class="w-full bg-[#30333a] border border-[#444851] rounded-xl px-3 py-2.5 text-white placeholder-gray-500 outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors">
+
+            <textarea id="description" placeholder="Description de la tâche" class="w-full bg-[#30333a] border border-[#444851] rounded-xl px-3 py-2.5 text-white placeholder-gray-500 outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"></textarea>
+
+            <button type="submit" id="submitBtn" class="flex-1 bg-cyan-600 hover:bg-cyan-500 text-white font-semibold rounded-xl px-4 py-2.5 transition-colors">
+                Ajouter
+            </button>
+
+        </form>
+
+        <hr>
+        <!-- Liste des tâches -->
+        <div id="tasksContainer"></div>
+    </main>
+
+</body>
+
+</html>
